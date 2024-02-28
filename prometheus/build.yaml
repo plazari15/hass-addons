@@ -1,0 +1,15 @@
+image: ghcr.io/home-assistant/{arch}-base-ubuntu
+ aarch64: "arm64v8/alpine:"
+  armv7: "arm32v7/alpine:"
+  armhf: "arm32v6/alpine:"
+  amd64: "alpine:"
+  i386: "i386/alpine:"
+cosign:
+  identity: https://github.com/home-assistant/docker-base/.*
+args:
+  BASHIO_VERSION: 0.15.0
+  TEMPIO_VERSION: 2021.09.0
+  S6_OVERLAY_VERSION: 3.1.5.0
+labels:
+  io.hass.base.name: ubuntu
+  org.opencontainers.image.source: https://github.com/home-assistant/docker-base

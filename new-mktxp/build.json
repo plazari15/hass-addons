@@ -1,0 +1,9 @@
+{
+    "build_from": {
+      "aarch64": "ghcr.io/akpw/mktxp:latest",
+      "amd64": "ghcr.io/akpw/mktxp:latest"
+    },
+    "codenotary": {
+      "signer": "plazari96@gmail.com"
+    }
+  }

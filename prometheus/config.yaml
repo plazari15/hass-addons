@@ -1,0 +1,20 @@
+---
+name: PROMETHEUS
+version: "1.0.1"
+slug: prometheus_addon_v2
+description: Prometheus Addon Server
+startup: services
+ingress: true
+ingrss_port: 49090
+ingress_stream: true
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: once
+advanced: true
+hassio_api: true
+host_network: true

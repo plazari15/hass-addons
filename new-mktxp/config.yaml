@@ -1,0 +1,17 @@
+---
+name: Mikrotik Metrics Exporter
+version: "1.0.2"
+slug: mikrotik_metrics_exporter
+description: Mikrotik Exporter
+startup: services
+ingress: true
+ingrss_port: 49090
+ingress_stream: true
+init: false
+arch:
+  - aarch64
+  - amd64
+startup: once
+advanced: true
+hassio_api: true
+host_network: true
